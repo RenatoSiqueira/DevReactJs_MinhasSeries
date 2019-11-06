@@ -16,15 +16,20 @@ const Header = () => {
     return (
         <div >
             <Navbar color='light' light expand='md'>
-                <NavbarBrand To='/'>Minhas Séries</NavbarBrand>
-                <NavbarToggler onClick={toggle} />
-                <Collapse isOpen={open} navbar>
-                    <Nav className='ml-auto' navbar>
-                        <NavItem>
-                            <NavLink tag={Link} to='/generos'>Gêneros</NavLink>
-                        </NavItem>
-                    </Nav>
-                </Collapse>
+                <div className="container">
+                    <NavbarBrand to='/'>Minhas Séries</NavbarBrand>
+                    <NavbarToggler onClick={toggle} />
+                    <Collapse isOpen={open} navbar>
+                        <Nav className='ml-auto' navbar>
+                            <NavItem>
+                                <NavLink tag={Link} to='/series'>Séries</NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink tag={Link} to='/generos'>Gêneros</NavLink>
+                            </NavItem>
+                        </Nav>
+                    </Collapse>
+                </div>
             </Navbar>
         </div>
     )
