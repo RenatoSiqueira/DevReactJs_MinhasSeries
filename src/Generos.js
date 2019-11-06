@@ -33,6 +33,7 @@ const Generos = () => {
         )
     }
 
+
     if (data.length === 0) {
         return (
             <div className='container'>
